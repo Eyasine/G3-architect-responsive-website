@@ -241,6 +241,24 @@ main > section{
     filter: grayscale(100%);
 }
 
+
+
+
+/* footer style */
+.footer-info{
+    max-width: 1440px;
+    margin: 0 auto;
+    border-radius: 8px;
+    
+}
+.footer-info p{
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 30px 20px;
+}
+
+
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
     .navbar,
@@ -269,6 +287,10 @@ main > section{
     #exprience-bage{
         margin-top: 20px;
         margin-left: 20px;
+    }
+    .footer-info{
+        width: 100%;
+
     }
     
 }
