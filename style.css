@@ -146,46 +146,48 @@ main > section{
     margin-bottom: 32px;
 }
 
-/* enjoy features */
+/* features sestion related styles */
+.features{
+    gap: 140px;
+}
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 30px;
+    font-size: 54px;
 
-.enjoy-contant{
-    max-width: 1440px;
-    margin: 130px auto;
+}
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(156, 156, 156, 0.2);
+    margin-bottom: 20px;
+
+}
+.feature-card .feature-title{
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
     
 }
-.enjoy-container{
-    width: 586px;
-    margin-right: 54px;
-}
-.enjoy-image{
-    margin-left: 92px;
-}
-.enjoy-container-title{
-    max-width: 468px;
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 60px;
-    margin-top: 0;
-
-}
-.container-discription{
-    margin-bottom: 40px;
+.feature-description{
+    margin-bottom: 0;
 }
 
-.enjoy-title{
-    font-size: 1.4rem;
-    margin-top: 30px;
-    margin-bottom: 10px;
+#exprience-bage{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -77px;
+}
+#exprience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.featured-architact img{
+    width: 100%;
+}
 
-}
-.enjoy-box{
-    width: 586px;
-    height: 171px;
-    padding: 10px 40px 10px 30px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px  rgba(156, 156, 156, 0.2);
-    margin-bottom: 20px;
-}
 
 /* some facts related style */
 
@@ -221,6 +223,10 @@ main > section{
 }
 
 /* sponsers related styles */
+
+.our-sponsors{
+    margin: 130px auto;
+}
 .sponser-info{
     max-width: 540px;
     margin: 50px auto;
@@ -237,7 +243,11 @@ main > section{
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-link, .teams, .enjoy-contant{
+    .navbar,
+    .nav-link,
+    .teams,
+    .enjoy-contant,
+    .features{
         flex-direction: column;
     }
     .team-image-container,
@@ -256,11 +266,16 @@ main > section{
     .enjoy-contant{
         margin-left: 30px;
     }
+    #exprience-bage{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
 }
 
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
+    .teams, .features{
         flex-direction: column;
     }
     .our-features{
@@ -276,5 +291,10 @@ main > section{
     .section-title, .fact-discription{
         text-align: center;
         margin: 20px auto 40px auto;
+    }
+    #exprience-bage{
+        margin-top: 20px;
+        margin-left: 20px;
+        
     }
 }
